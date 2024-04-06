@@ -7,14 +7,25 @@
   }
   body {
     width: 100%;
-    background-color: aqua;
+    background-color: #21446a;
+  }
+
+  h1, h2, h3, li {
+    color: #fff;
   }
   
-  .nav-container {
+  #nav-container {
     width: 100%;
+    overflow: hidden;
     height: auto;
   }
   
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
   ul {
     display: flex;
     flex-flow: row wrap;
@@ -29,14 +40,94 @@
   }
   
   .main-content-container {
-    width: 100%;
-    text-align: center;
-    height: auto;
+    display: flex;
+    height: 93vh;
+    align-items: center;
+    justify-content: center;
   }
 
-  h1 {
-    display: inline-block;
-    margin: 0px;
+  .intro-container {
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .main-content-container h1 {
+    font-size: 40px;
+    margin: 10px;
+  }
+
+  .main-content-container h2 {
+    font-size: 18px;
+    max-width: 280px;
+    margin: 10px;
+  }
+
+  .main-content-container h3 {
+    font-size: 18px;
+    max-width: 280px;
+    margin: 10px;
+  }
+
+  #contactBtn {
+    max-width: 100px;
+    max-height: 50px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .bodyOnePage {
+    height: 100vh;
+  }
+
+  .about-container {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+  }
+
+  .about-container h3 {
+    width: auto;
+    padding: 130px 0px 0px 0px;
+    margin: 0px 0px 0px 30px;
+  }
+
+  .about-info-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .about-info-container hr {
+    color: #fff;  
+    width: 30px;
+    height: 1px;
+    margin: 0px 0px 0px 30px;
+  }
+
+  .about-info-container p {
+    color: #fff;
     max-width: 300px;
   }
+
+  .skills-container {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skill-item-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .skill-item {
+    width: auto;
+    height: 100px;
+    margin: 10px;
+    background-color: beige;
+  }
+
 }
