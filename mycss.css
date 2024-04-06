@@ -89,8 +89,9 @@
 
   .about-container h3 {
     width: auto;
-    padding: 120px 0px 0px 0px;
+    padding: 95px 0px 0px 0px;
     margin: 0px 0px 0px 30px;
+    position: relative;
   }
 
   .about-info-container {
@@ -123,7 +124,7 @@
     height: auto;
     color: #aa9090;
     background-color: rgba(255, 255, 255, 0.8);
-    z-index: 2;
+    z-index: 1;
   }
 
   .skills-backdrop h3 {
