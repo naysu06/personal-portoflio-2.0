@@ -119,7 +119,8 @@
   .skills-backdrop h3 {
     position: absolute;
     top: 0%; /* Position the text halfway down the box */
-    left: 150px;
+    width: 100%;
+    text-align: center;
     transform: translateY(-50%); /* Center the text vertically */
   }
 
