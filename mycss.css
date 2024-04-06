@@ -84,7 +84,7 @@
   .about-container {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 40vh;
   }
 
   .about-container h3 {
