@@ -23,6 +23,7 @@
         <h1>FRANZ DOMINIC CASTRO</h1>
         <h2>I'm a college student dreaming to become a web developer!</h2>
         <button id="contactBtn">Contact Me</button>
+      </div>
     </div>
   </div>
 </div>
@@ -46,10 +47,63 @@
   </div>
 </div>
 <div class="bodyTwoPage">
-  
+  <div class="proj-container">
+    <div class="proj-title-container">
+      <label id="proj-title" for="projects">Recent Works</label>
+    </div>
+    <div class="proj-filter-container">
+        <div class="dropdown">
+          <button class="dropbtn">Filter</button>
+          <div class="dropdown-content">
+            <a id="filter" data-filter="all">All</a>
+            <a id="filter" data-filter="web-design">Web Design</a>
+            <a id="filter" data-filter="graphic-design">Graphic Design</a>
+            <a id="filter" data-filter="web-development">Web Development</a>
+          </div>
+        </div>
+    </div>
+  </div>
+  <div class="proj-item-container">
+    <div class="proj-list-container" data-category="web-design">
+      <div class="project"></div>
+    </div>
+    <div class="proj-list-container" data-category="graphic-design">
+      <div class="project"></div>
+    </div>
+    <div class="proj-list-container" data-category="web-development">
+      <div class="project"></div>
+    </div>
+  </div>
+  <div class="rm-container"></div>
+  <div class="contact-container"></div>
 </div>
 </body>
 <script>
+
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('#filter');
+    const portfolioItems = document.querySelectorAll('.proj-list-container');
+
+    filterButtons.forEach(function (button) {
+        button.addEventListener('click', function () {
+            const filterValue = this.getAttribute('data-filter');
+            portfolioItems.forEach(function (item) {
+                if (filterValue === 'all') {
+                  item.style.flex = 1;
+                  item.style.display = 'flex';
+                } else if (item.getAttribute('data-category').includes(filterValue)) {
+                    item.style.flex = 'none';
+                    item.style.display = 'block';
+                    item.style.width = '50%';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+});
+
+
     // When the user scrolls the page, execute myFunction
   window.onscroll = function() {myFunction()};
 
