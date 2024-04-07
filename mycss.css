@@ -154,17 +154,12 @@
     display: flex;
     z-index: 0;
   }
-  .rm-container,
+
   .contact-container {
     width: 100%;
     height: 100vh;
     display: flex;
     z-index: -1;
-  }
-
-  .rm-container {
-    justify-content: center;
-    flex-direction: column;
   }
 
   .proj-item-container {
@@ -199,6 +194,13 @@
     margin: 5px;
   }
 
+  .rm-container {
+    height: 100vh;
+    margin-top: 30px;
+    justify-content: center;
+    flex-direction: column;
+  }
+
   .rm-backdrop {
     position: relative;
     width: auto;
@@ -231,12 +233,12 @@
   .rm-info-title {
     width: 40px;
     height: auto;
-    padding: 20px 5px 0px 20px;
+    padding: 20px 5px 20px 20px;
   }
 
   .rm-info-body {
     max-width: 300px;
-    padding: 20px 5px 0px 20px;
+    padding: 20px 5px 20px 20px;
   }
 
   .dropdown {
