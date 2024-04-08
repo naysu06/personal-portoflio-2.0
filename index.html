@@ -4,6 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="mycss.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <title>Franz's Portfolio</title>
 </head>
 <body>
@@ -19,9 +22,9 @@
     </div>
     <div class="main-content-container">
       <div class="intro-container">
-        <h3>Hi, my name is</h3>
-        <h1>FRANZ DOMINIC CASTRO</h1>
-        <h2>I'm a college student dreaming to become a web developer!</h2>
+        <h3 style="font-size: 30px;">Hi, my name is</h3>
+        <h1 style="font-size: 70px;">FRANZ DOMINIC CASTRO</h1>
+        <h2 style="font-size: 30px;">An aspiring web developer in pursuit to master my craft</h2>
         <button id="contactBtn">Contact Me</button>
       </div>
     </div>
@@ -29,12 +32,14 @@
 </div>
 <div class="bodyOnePage">
   <div class="about-container">
-    <h3>About</h3>
-    <p>I'm a 20 years old college student at University of the Cordilleras. I study in Bachelors of Information Technology major in <strong>Web Development</strong></p>
+    <h3 style="font-size: 30px;">About</h3>
+    <p style="font-size: 20px;">I'm a 20 years old college student at University of the Cordilleras. I study Bachelors of Information Technology major in <strong>Web Development</strong></p>
+  </div>
+  <div class="skills-title-container">
+    <h3 style="font-size: 30px;">Skills</h3>
   </div>
   <div class="skills-container">
     <div class="skills-backdrop">
-      <h3>Skills</h3>
       <div class="skill-item-container">
         <div class="skill-item"></div>
         <div class="skill-item"></div>
@@ -53,7 +58,7 @@
     </div>
     <div class="proj-filter-container">
         <div class="dropdown">
-          <button class="dropbtn">Filter</button>
+          <button class="dropBtn">Filter &nbsp; ▼</button>
           <div class="dropdown-content">
             <a id="filter" data-filter="all">All</a>
             <a id="filter" data-filter="web-design">Web Design</a>
@@ -92,9 +97,11 @@
         </div>
       </div>
     </div>
+    <div class="contact-title-container">
+      <h3>Contact Me</h3>
+    </div>
   </div>
   <div class="contact-container">
-    <h3>Contact Me</h3>
     <div class="contact-info-container">
       <hr>
       <div class="contact-svg">
