@@ -437,10 +437,10 @@
 
   .rm-backdrop h3 {
     position: absolute;
-    top: 0%; /* Position the text halfway down the box */
+    top: 0%; 
     width: auto;
     left: 20px;
-    transform: translateY(-50%); /* Center the text vertically */
+    transform: translateY(-50%); 
   }
 
   .rm-info-container {
