@@ -415,9 +415,9 @@
   .project {
     display: flex;
     flex: 1;
-    width: 50%;
     height: 150px;
     background-color: #fff;
+    text-align: center;
   }
 
   .proj-list-container {
